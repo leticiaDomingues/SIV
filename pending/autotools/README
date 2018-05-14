@@ -1,0 +1,35 @@
+
+    Exempli Gratia (POSIX by example)
+
+    Copyright (c) 2015 Francisco Jose Monaco <monaco@icmc.usp.br>
+    This is Free Open Source Software. For licensing, see COPYING
+    POSIX-eg repository can be found at https://gitlab.com/monaco/posixeg
+---------------------------------------------------------------------------
+
+
+		A "TRIVIAL" (lol) AUTOTOOLS HELLO WORLD
+
+INTRODUCTION
+------------
+
+This directory contains examples of GNU Autotools usage.
+
+In order to work out the exercises you will need 
+
+  autotools (autoconf, automake, libtool and friends)
+  autotoconf archive (*)
+
+
+(*) This is for AX_PTHREAD() m4 macro. Alternatively, you may donwload it by 
+    following the link in this page: 
+    http://www.gnu.org/software/autoconf-archive/ax_pthread.html
+
+CONTENTS
+--------
+
+  proj-000      A simple project notu using autotools
+  proj-001	A minimal autotools example
+  proj-002      Using subdirs plus config.h and init flags
+  proj-003      Bulding and installing libraries
+  proj-004      Using configurantion tests, replacements
+

@@ -1,0 +1,24 @@
+
+POSIX Exempli Gratia (POSIX by example)
+
+Copyright (c) 2015 Francisco Jose Monaco <monaco@icmc.usp.br>
+This is Free Open Source Software. For licensing, see COPYING.
+
+-------------------------------------------------------------------
+
+Makefine -  A simple template boostrap for C source code prjects.
+
+This template makefile can be used for multi binaries C source code projects.
+
+Simply copy the files
+
+       Makefile
+       config.mk
+       local.mk
+       gendist.mk
+
+to your project directory. After, edit the config.mk according to the 
+instructions contained in that file.
+
+Refere to the source code of Makefile for further details.
+

@@ -1,0 +1,117 @@
+
+POSIX Exempli Gratia (POSIX by example)
+
+Copyright (c) 2015 Francisco Jose Monaco <monaco@icmc.usp.br>
+This is Free Open Source Software. For licensing, see COPYING.
+
+----------------------------------------------------------------------
+
+OVERVIEW
+--------
+
+POSIX-eg is small collection of simple POSIX programming examples.
+
+Code samples were collected from class notes while teaching system
+programming for students of computer sciences and engineering. Some
+examples have been useful in graduate and undergraduate disciplines
+including Operating Systems, Computer Architecture, Distributed Systems
+and Computer Networks.
+
+POSIX-eg repository includes also some programming exercises.
+
+The project can be found at https://gitlab.com/monaco/posixeg
+
+QUICK START
+-----------
+
+After either cloning POSIXeg from the VCS repository or unpacking a
+distribution tarball, build the project by invoking of the provided
+GNU build system's scripts:
+
+    $ cd <somepath>/posixeg
+    $ ./configure
+    $ make
+
+Note:
+
+    optionally, POSIXeg may be installed by issuing
+
+       $ make install
+
+    and to install the software in a specific path, say /tmp/foo, issue
+
+       $ ./configure --prefix=/tmp/foo
+       $ make
+       $ make install
+
+     this should install binnaries in /tmp/foo/bin, libraries in
+     /tmp/foo/lib, header sin /tmp/foo/include and so on.
+
+POSIXeg content is organized in directories:
+
+* posixeg/instructions	 with directions for students and instructors;
+* posixeg/examples   	 with varying source code examples;
+* posixeg/exercises	 with proposed programming exercises;
+* posixeg/lib		 with libposixeg, useful for the exercises;
+* posixeg/tools		 with miscellaneous utilities;
+* posixeg/doc		 with the project documentation;
+* posixeg/extras	 with some non-strict POSIX add-ons.
+
+Unlike the usual Autotools approach, POSIXeg build scripts are not configured to
+automatically compile all the software at once. Instead, for most project's
+directories,  the aforementioned steps will solely generate the needed
+Makefiles.  Each specific piece of software that is not automatically built
+shall be individually compiled, and optionally installed, by entering the
+respective directory and issuing the appropriate building command:
+
+   $ cd <relevant-directory>
+   $ make
+
+For instance, to build programs under posixeg/examples/snippets:
+
+   $ cd <somepath>/posixeg/examples/snippets
+   $ make
+
+All other Autotools' standard targets are available as usual.
+
+Note: Before building a specific project module in this way, however, remember
+to issue 'make' command from the top source directory, as explained, seen that
+modules may need some automatically built resources as prerequisite.
+
+Alternatively, it is possible to build the entire project at once by issuing
+
+   $ make force-all
+
+from the project's top source directory.
+
+File posixeg/INSTALL contains detailed building and installation instructions.
+
+NEXT STEPS
+----------
+
+Both instructors and students may refer to directory 'instructions' for
+detailed information on how to use the package contents for teaching/learning
+POSIX concepts, including a guide for available examples, as well as directions
+for practicing and verifying proposed programming exercises.
+
+The package offers several illustration of POSIX programming ranging from
+minimal self-contained code excerpts to more sophisticated stand-alone
+applications and library demonstrations.  These may be found under
+directory 'examples'.
+
+Included with the software, under directory 'exercises' there are also some
+programming exercises intended for students and instructors interested in
+practicing the concepts and examples.  Specific instructions are offered
+when applicable. When doing exercises, libposixeg in directory 'lib' may
+be useful. See lib/README for further details.
+
+Directory 'tools' contain some miscellaneous utilities which may be of use
+for practicing the programming exercises and in general. Also included, under
+directory 'extras', are a few non-strict POSIX, yet interesting, examples and
+tools which may come in handy for common practical situations.
+
+Finally, please, refer to documents in directory 'doc' for further directions
+on both installing the software and contributing to the project.
+
+
+
